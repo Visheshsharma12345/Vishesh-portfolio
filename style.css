@@ -766,7 +766,7 @@ main {
     }
     .fab-contact {
         right: 1.5rem;
-        bottom: 1.5rem;
+        bottom: 5rem;
         width: 50px;
         height: 50px;
         font-size: 1.5rem;
@@ -863,6 +863,19 @@ main {
     #contact-form button {
         font-size: 1rem;
         padding: 0.8rem 1.2rem;
+    }
+    .fab-contact {
+        right: 1rem;
+        bottom: 4.5rem;
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+    .back-to-top {
+        bottom: 15px;
+        right: 15px;
+        padding: 0.5rem 0.8rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -1172,26 +1185,35 @@ body > *:not(.bg-video):not(.bg-video-1):not(.bg-video-2):not(.bg-video-3) {
 /* Floating Action Button */
 .fab-contact {
     position: fixed;
-    right: 2.2rem;
-    bottom: 2.2rem;
+    right: 1.5rem;
+    bottom: 5rem;
     background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
     color: #23233b;
-    width: 58px;
-    height: 58px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     box-shadow: 0 4px 24px #00f2fe55;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     z-index: 10000;
     transition: background 0.3s, transform 0.2s;
+    text-decoration: none;
 }
 .fab-contact:hover {
     background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
     color: #fff;
     transform: scale(1.12) rotate(-8deg);
+    text-decoration: none;
+}
+.fab-contact span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 /* Animated Back to Top Button */
